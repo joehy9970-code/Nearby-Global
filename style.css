@@ -191,6 +191,31 @@ h2 { font-size: 2rem; color: var(--text-color); }
 .blog-post a { color: #ff5f6d; text-decoration: none; }
 .blog-post a:hover { text-decoration: underline; }
 
+/* Blog List */
+.blog-list .blog-post-summary {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--card-border);
+}
+.blog-list .blog-post-summary:last-child {
+    border-bottom: none;
+}
+.blog-list h2 a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+.blog-list h2 a:hover {
+    color: #ff5f6d;
+}
+
+/* Blog Post Full */
+.blog-post-full h2 {
+    font-size: 1.5rem;
+}
+.blog-post-full ul, .blog-post-full ol {
+    line-height: 1.8;
+}
+
 /* FAQ */
 .faq { margin-bottom: 30px; }
 .faq h3 { font-size: 1.2rem; color: #ff5f6d; }

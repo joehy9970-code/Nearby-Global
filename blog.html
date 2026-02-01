@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearby Global - 블로그</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+  </label>
+</div>
+
+<div class="lang-switcher">
+    <a href="index.html" class="lang-btn">홈</a>
+    <a href="info.html" class="lang-btn">추가 정보</a>
+    <a href="blog.html" class="lang-btn active">블로그</a>
+    <button class="lang-btn" onclick="changeLang('ko', event)">한국어</button>
+    <button class="lang-btn" onclick="changeLang('en', event)">English</button>
+    <button class="lang-btn" onclick="changeLang('ru', event)">Русский</button>
+    <button class="lang-btn" onclick="changeLang('es', event)">Español</button>
+    <button class="lang-btn" onclick="changeLang('zh', event)">中文</button>
+    <button class="lang-btn" onclick="changeLang('ja', event)">日本語</button>
+</div>
+
+<header>
+    <h1>블로그</h1>
+</header>
+
+<div class="container">
+    <div class="blog-list">
+        <div class="blog-post-summary">
+            <h2><a href="post1.html">장거리 연애의 어려움과 극복 방법</a></h2>
+            <p>장거리 연애는 많은 어려움을 동반합니다. 하지만 올바른 마음가짐과 도구가 있다면, 충분히 극복할 수 있습니다...</p>
+        </div>
+        <div class="blog-post-summary">
+            <h2><a href="post2.html">온라인 데이트, 이것만은 조심하세요!</a></h2>
+            <p>온라인 데이트는 새로운 사람을 만나는 좋은 방법이지만, 항상 안전을 최우선으로 생각해야 합니다...</p>
+        </div>
+        <div class="blog-post-summary">
+            <h2><a href="post3.html">첫 데이트, 어디로 가야 할까?</a></h2>
+            <p>드디어 매칭된 상대와 첫 데이트를 하게 되었습니다. 어디로 가야 할지 고민이신가요? 저희가 몇 가지 아이디어를 제안해 드립니다...</p>
+        </div>
+    </div>
+</div>
+
+<footer style="text-align: center; padding: 50px; color: #bbb; font-size: 0.9rem; border-top: 1px solid #eee;">
+    &copy; 2026 Nearby Global. All rights reserved.
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
