@@ -37,7 +37,27 @@ const translations = {
         feature4: "✔️ 오프라인 만남 제안: 거리가 가까운 만큼, 실제 만남으로 이어질 수 있도록 지원합니다.",
         aboutUsTitle: "우리에 대하여",
         aboutUsDesc: "Nearby Global은 의미 있는 연결을 만드는 것을 목표로 합니다. 저희는 기술을 통해 사람들이 국경을 넘어 가까운 거리에서 새로운 인연을 만날 수 있다고 믿습니다. 저희 팀은 열정적인 개발자, 디자이너, 그리고 커뮤니티 관리자로 구성되어 있으며, 사용자들이 최고의 경험을 할 수 있도록 최선을 다하고 있습니다.",
-        infoTitle: "추가 정보",
+        infoTitle: "국제 연애 팁",
+        tip1Title: "1. 열린 마음을 가지세요",
+        tip1Desc: "서로 다른 문화적 배경을 가지고 있다는 것을 항상 기억하고, 상대방의 문화를 존중하고 이해하려는 노력을 하세요.",
+        tip2Title: "2. 언어의 장벽을 함께 극복하세요",
+        tip2Desc: "서로의 언어를 배우는 것은 관계를 더욱 깊게 만들어 줄 것입니다. 번역 앱을 활용하는 것도 좋은 방법입니다.",
+        tip3Title: "3. 꾸준히 소통하세요",
+        tip3Desc: "물리적으로 떨어져 있더라도, 영상 통화나 메시지를 통해 꾸준히 소통하며 서로의 일상을 공유하세요.",
+        tip4Title: "4. 서로의 나라를 방문하세요",
+        tip4Desc: "서로의 나라를 방문하여 문화를 직접 체험하고, 가족과 친구들을 만나는 것은 관계 발전에 큰 도움이 됩니다.",
+        tip5Title: "5. 작은 오해에 좌절하지 마세요",
+        tip5Desc: "문화적 차이나 언어의 문제로 인해 작은 오해가 생길 수 있습니다. 그럴 때일수록 차분하게 대화로 풀어가는 것이 중요합니다.",
+        tip6Title: "6. 첫 만남은 공공장소에서",
+        tip6Desc: "온라인에서 만난 사람과 처음 만날 때는, 안전을 위해 사람이 많은 공공장소에서 만나는 것이 좋습니다.",
+        tip7Title: "7. 금전 요구는 단호하게 거절하세요",
+        tip7Desc: "어떤 이유에서든 상대방이 금전을 요구한다면, 이는 위험 신호일 수 있습니다. 단호하게 거절하고 관계를 다시 생각해보세요.",
+        tip8Title: "8. 서로의 음식을 즐겨보세요",
+        tip8Desc: "함께 서로의 나라 음식을 만들어 먹거나, 맛집을 찾아다니는 것은 즐거운 데이트가 될 수 있습니다.",
+        tip9Title: "9. 기념일을 챙기세요",
+        tip9Desc: "서로의 나라의 기념일이나, 둘만의 특별한 날을 함께 챙기는 것은 관계를 더욱 특별하게 만들어 줍니다.",
+        tip10Title: "10. 미래에 대해 함께 계획하세요",
+        tip10Desc: "관계가 진지해진다면, 미래에 대해 함께 이야기하고 계획을 세우는 것이 중요합니다. 이는 서로에게 확신을 줄 것입니다.",
         faqTitle: "자주 묻는 질문 (FAQ)",
         faq1q: "Nearby Global은 어떤 서비스인가요?",
         faq1a: "Nearby Global은 500km 이내의 사람들과 연결해주는 국제 매칭 서비스입니다. 저희는 사용자들이 국경을 넘어 의미 있는 관계를 맺을 수 있도록 돕습니다. 저희의 목표는 단순한 온라인 상의 만남을 넘어, 실제적인 관계로 발전할 수 있는 기회를 제공하는 것입니다.",
@@ -294,15 +314,7 @@ const translations = {
         mailSub: "提交",
         navHome: "家",
         navInfo: "信息",
-        navQA: "Q&A",
-        qaTitle: "Q&A",
-        qa1q: "如何在国际关系中克服语言障碍？",
-        qa1a: "语言障碍是国际约会中最大的挑战之一。但是，可以通过努力学习对方的语言来克服。此外，使用翻译应用程序或积极使用肢体语言是一个好方法。",
-        qa2q: "如何解决因文化差异引起的冲突？",
-        qa2a: "由于文化背景不同，发生冲突是正常的。重要的是要互相尊重对方的文化，并以开放的心态交谈。需要努力学习和理解对方的文化。",
-        qaFormTitle: "问一个问题",
-        qaFormPlaceholder: "输入你的问题...",
-        qaFormSubmit: "提交",
+        navFAQ: "FAQ",
         howItWorksTitle: "如何运作？",
         step1Title: "创建个人资料",
         step1Desc: "输入您的兴趣、照片和理想型信息，以完善您的个人资料。",
@@ -369,15 +381,7 @@ const translations = {
         mailSub: "送信",
         navHome: "ホーム",
         navInfo: "追加情報",
-        navQA: "Q&A",
-        qaTitle: "Q&A",
-        qa1q: "国際恋愛における言語の壁を乗り越える方法は？",
-        qa1a: "言語の壁は国際恋愛における最大の課題の1つです。しかし、お互いの言語を学ぼうと努力することで乗り越えることができます。また、翻訳アプリを使ったり、ボディランゲージを積極的に活用したりするのも良い方法です。",
-        qa2q: "文化の違いによる対立を解決するには？",
-        qa2a: "文化的な背景が違うので、対立が生じるのは自然なことです。大切なのは、お互いの文化を尊重し、心を開いて話し合うことです。相手の文化を学び、理解しようと努力することが必要です。",
-        qaFormTitle: "質問する",
-        qaFormPlaceholder: "質問を入力してください...",
-        qaFormSubmit: "提出",
+        navFAQ: "FAQ",
         howItWorksTitle: "どうやって動きますか？",
         step1Title: "プロフィール作成",
         step1Desc: "あなたの興味、写真、そして理想のタイプに関する情報を入力して、プロフィールを完成させてください。",
@@ -536,12 +540,14 @@ if (currentTheme) {
     }
 }
 
-const currentLang = localStorage.getItem('lang') || 'ko';
-const langSelector = document.getElementById('lang-selector');
-if (langSelector) {
-    langSelector.value = currentLang;
-    langSelector.addEventListener('change', (event) => {
-        changeLang(event.target.value);
-    });
-}
-changeLang(currentLang);
+document.addEventListener('DOMContentLoaded', function() {
+    const currentLang = localStorage.getItem('lang') || 'ko';
+    const langSelector = document.getElementById('lang-selector');
+    if (langSelector) {
+        langSelector.value = currentLang;
+        langSelector.addEventListener('change', (event) => {
+            changeLang(event.target.value);
+        });
+    }
+    changeLang(currentLang);
+});
