@@ -11,7 +11,18 @@ const translations = {
         ctaT: "새로운 세계가 당신을 기다립니다",
         ctaB: "앱 출시 알림 받기",
         mailPH: "이메일 주소를 입력하세요",
-        mailSub: "신청하기"
+        mailSub: "신청하기",
+        navHome: "홈",
+        navInfo: "추가 정보",
+        navQA: "Q&A",
+        qaTitle: "Q&A",
+        qa1q: "국제 연애, 언어 장벽은 어떻게 극복하나요?",
+        qa1a: "언어 장벽은 국제 연애의 가장 큰 어려움 중 하나입니다. 하지만 서로의 언어를 배우려는 노력을 통해 극복할 수 있습니다. 또한, 번역 앱을 사용하거나, 바디 랭귀지를 적극적으로 활용하는 것도 좋은 방법입니다.",
+        qa2q: "문화 차이로 인한 갈등은 어떻게 해결해야 할까요?",
+        qa2a: "서로 다른 문화적 배경을 가지고 있기 때문에 갈등이 생기는 것은 당연합니다. 중요한 것은 서로의 문화를 존중하고, 열린 마음으로 대화하는 것입니다. 상대방의 문화를 배우고 이해하려는 노력이 필요합니다.",
+        qaFormTitle: "질문하기",
+        qaFormPlaceholder: "질문을 입력하세요...",
+        qaFormSubmit: "제출",
     },
     en: {
         subtitle: "Cross borders, not distance.",
@@ -25,7 +36,18 @@ const translations = {
         ctaT: "A new world awaits you",
         ctaB: "Get Notified",
         mailPH: "Enter your email",
-        mailSub: "Submit"
+        mailSub: "Submit",
+        navHome: "Home",
+        navInfo: "Info",
+        navQA: "Q&A",
+        qaTitle: "Q&A",
+        qa1q: "How to overcome the language barrier in an international relationship?",
+        qa1a: "The language barrier is one of the biggest challenges in international dating. However, it can be overcome by trying to learn each other's language. Also, using translation apps or actively using body language is a good way.",
+        qa2q: "How to resolve conflicts due to cultural differences?",
+        qa2a: "It is natural to have conflicts because of different cultural backgrounds. The important thing is to respect each other's culture and talk with an open mind. Efforts to learn and understand the other person's culture are needed.",
+        qaFormTitle: "Ask a question",
+        qaFormPlaceholder: "Enter your question...",
+        qaFormSubmit: "Submit",
     },
     ru: {
         subtitle: "Пересекайте границы, а не расстояния.",
@@ -39,7 +61,18 @@ const translations = {
         ctaT: "Новый мир ждет вас",
         ctaB: "Узнать о запуске",
         mailPH: "Введите ваш email",
-        mailSub: "Отправить"
+        mailSub: "Отправить",
+        navHome: "Дом",
+        navInfo: "Информация",
+        navQA: "Q&A",
+        qaTitle: "Q&A",
+        qa1q: "Как преодолеть языковой барьер в международных отношениях?",
+        qa1a: "Языковой барьер - одно из самых больших препятствий в международных знакомствах. Однако его можно преодолеть, пытаясь выучить язык друг друга. Кроме того, хорошим способом является использование приложений-переводчиков или активное использование языка тела.",
+        qa2q: "Как разрешать конфликты из-за культурных различий?",
+        qa2a: "Естественно иметь конфликты из-за разных культурных традиций. Важно уважать культуру друг друга и разговаривать с открытым сердцем. Необходимы усилия для изучения и понимания культуры другого человека.",
+        qaFormTitle: "Задайте вопрос",
+        qaFormPlaceholder: "Введите свой вопрос...",
+        qaFormSubmit: "Отправить",
     },
     es: {
         subtitle: "Cruza fronteras, no distancias.",
@@ -53,12 +86,23 @@ const translations = {
         ctaT: "Un nuevo mundo te espera",
         ctaB: "Recibir Notificación",
         mailPH: "Tu correo electrónico",
-        mailSub: "Enviar"
+        mailSub: "Enviar",
+        navHome: "Casa",
+        navInfo: "Información",
+        navQA: "Q&A",
+        qaTitle: "Q&A",
+        qa1q: "¿Cómo superar la barrera del idioma en una relación internacional?",
+        qa1a: "La barrera del idioma es uno de los mayores desafíos en las citas internacionales. Sin embargo, se puede superar tratando de aprender el idioma del otro. Además, usar aplicaciones de traducción o usar activamente el lenguaje corporal es una buena manera.",
+        qa2q: "¿Cómo resolver conflictos por diferencias culturales?",
+        qa2a: "Es natural tener conflictos debido a los diferentes orígenes culturales. Lo importante es respetar la cultura de cada uno y hablar con la mente abierta. Se necesitan esfuerzos para aprender y comprender la cultura de la otra persona.",
+        qaFormTitle: "Haga una pregunta",
+        qaFormPlaceholder: "Ingrese su pregunta...",
+        qaFormSubmit: "Enviar",
     },
     zh: {
         subtitle: "超越国界，但不超越距离。",
         secTitle: "为什么是 500公里？",
-        secDesc: "飞机1小时，火车半天。只要真心，这就是能触及의距离。与其漫장의异地恋，不如遇见500公里内的缘分。",
+        secDesc: "飞机1小时，火车半天。只要真心，这就是能触及的距离。与其漫长的异地恋，不如遇见500公里内的缘分。",
         radius: "📍 匹配半径：500公里",
         c1t: "🌍 智能全球匹配",
         c1d: "语言不同，距离相近。为您寻找适合您生活方式的全球缘分。",
@@ -67,21 +111,43 @@ const translations = {
         ctaT: "新的世界在等待着你",
         ctaB: "获取发布通知",
         mailPH: "输入您的电子邮件",
-        mailSub: "提交"
+        mailSub: "提交",
+        navHome: "家",
+        navInfo: "信息",
+        navQA: "Q&A",
+        qaTitle: "Q&A",
+        qa1q: "如何在国际关系中克服语言障碍？",
+        qa1a: "语言障碍是国际约会中最大的挑战之一。但是，可以通过努力学习对方的语言来克服。此外，使用翻译应用程序或积极使用肢体语言是一个好方法。",
+        qa2q: "如何解决因文化差异引起的冲突？",
+        qa2a: "由于文化背景不同，发生冲突是正常的。重要的是要互相尊重对方的文化，并以开放的心态交谈。需要努力学习和理解对方的文化。",
+        qaFormTitle: "问一个问题",
+        qaFormPlaceholder: "输入你的问题...",
+        qaFormSubmit: "提交",
     },
     ja: {
         subtitle: "国境は越えても、距離は越えないで。",
-        secTitle: "왜 500km なのですか？",
-        secDesc: "飛行機で1時間、電車で半日. 本気なら届く距離です. 500km以内の出会いを探しましょう。",
+        secTitle: "なぜ500kmなのですか？",
+        secDesc: "飛行機で1時間、電車で半日。本気なら届く距離です。500km以内の出会いを探しましょう。",
         radius: "📍 マッチング範囲：500km",
         c1t: "🌍 スマートなマッチング",
-        c1d: "言葉は違っても距離は近く。あなたのライフスタイルに 맞는 縁を見つけます。",
-        c2t: "📏 正確한 距離制限",
+        c1d: "言葉は違っても距離は近く。あなたのライフスタイルに合った縁を見つけます。",
+        c2t: "📏 正確な距離制限",
         c2d: "GPSに基づき500km以内のユーザーを表示。「今週末」会える人を大切にします。",
         ctaT: "新しい世界があなたを待っています",
         ctaB: "リリース通知を受け取る",
         mailPH: "メールアドレスを入力",
-        mailSub: "送信"
+        mailSub: "送信",
+        navHome: "ホーム",
+        navInfo: "追加情報",
+        navQA: "Q&A",
+        qaTitle: "Q&A",
+        qa1q: "国際恋愛における言語の壁を乗り越える方法は？",
+        qa1a: "言語の壁は国際恋愛における最大の課題の1つです。しかし、お互いの言語を学ぼうと努力することで乗り越えることができます。また、翻訳アプリを使ったり、ボディランゲージを積極的に活用したりするのも良い方法です。",
+        qa2q: "文化の違いによる対立を解決するには？",
+        qa2a: "文化的な背景が違うので、対立が生じるのは自然なことです。大切なのは、お互いの文化を尊重し、心を開いて話し合うことです。相手の文化を学び、理解しようと努力することが必要です。",
+        qaFormTitle: "質問する",
+        qaFormPlaceholder: "質問を入力してください...",
+        qaFormSubmit: "提出",
     }
 };
 
@@ -108,19 +174,31 @@ function changeLang(lang) {
         'cta-title': 'ctaT',
         'cta-btn': 'ctaB',
         'email-placeholder': 'mailPH',
-        'submit-text': 'mailSub'
+        'submit-text': 'mailSub',
+        'nav-home': 'navHome',
+        'nav-info': 'navInfo',
+        'nav-qa': 'navQA',
+        'qa-title': 'qaTitle',
+        'qa-1-q': 'qa1q',
+        'qa-1-a': 'qa1a',
+        'qa-2-q': 'qa2q',
+        'qa-2-a': 'qa2a',
+        'qa-form-title': 'qaFormTitle',
+        'qa-form-placeholder': 'qaFormPlaceholder',
+        'qa-form-submit': 'qaFormSubmit',
     };
 
     for (const id in elements) {
         const element = document.getElementById(id);
         if (element) {
-            if (id === 'email-placeholder') {
+            if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
                 element.placeholder = t[elements[id]];
             } else {
                 element.innerText = t[elements[id]];
             }
         }
     }
+    localStorage.setItem('lang', lang);
 }
 
 
@@ -146,10 +224,12 @@ if (currentTheme) {
     }
 }
 
-// Language Selector
+const currentLang = localStorage.getItem('lang') || 'ko';
 const langSelector = document.getElementById('lang-selector');
 if (langSelector) {
+    langSelector.value = currentLang;
     langSelector.addEventListener('change', (event) => {
         changeLang(event.target.value);
     });
 }
+changeLang(currentLang);

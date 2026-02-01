@@ -203,37 +203,46 @@ h2 { font-size: 2rem; color: var(--text-color); }
 /* About Us */
 .about-us { margin-top: 60px; }
 
-/* Blog Section */
-.blog-section { margin-top: 60px; }
-.blog-post { margin-bottom: 40px; }
-.blog-post h3 { font-size: 1.5rem; }
-.blog-post a { color: #ff5f6d; text-decoration: none; }
-.blog-post a:hover { text-decoration: underline; }
-
-/* Blog List */
-.blog-list .blog-post-summary {
+/* Q&A List */
+.qa-list .qa-post {
     margin-bottom: 40px;
     padding-bottom: 40px;
     border-bottom: 1px solid var(--card-border);
 }
-.blog-list .blog-post-summary:last-child {
+.qa-list .qa-post:last-child {
     border-bottom: none;
 }
-.blog-list h2 a {
-    color: var(--text-color);
-    text-decoration: none;
-}
-.blog-list h2 a:hover {
+.qa-list h3 {
     color: #ff5f6d;
 }
 
-/* Blog Post Full */
-.blog-post-full h2 {
-    font-size: 1.5rem;
+/* Q&A Form */
+.qa-form { margin-top: 60px; }
+.qa-form textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    margin-bottom: 15px;
 }
-.blog-post-full ul, .blog-post-full ol {
-    line-height: 1.8;
+.qa-form button {
+    background: #ff5f6d;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
 }
+.qa-form button:hover {
+    background: #e04e5a;
+}
+
 
 /* FAQ */
 .faq { margin-bottom: 30px; }
