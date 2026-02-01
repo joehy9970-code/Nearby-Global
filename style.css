@@ -119,6 +119,7 @@ input:checked + .slider:before {
     /* 핵심: 모든 언어 버튼 너비를 110px로 고정 */
     width: 110px; 
     text-align: center;
+    text-decoration: none;
 }
 
 .lang-btn:hover, .lang-btn.active { 
@@ -189,6 +190,10 @@ h2 { font-size: 2rem; color: var(--text-color); }
 .blog-post h3 { font-size: 1.5rem; }
 .blog-post a { color: #ff5f6d; text-decoration: none; }
 .blog-post a:hover { text-decoration: underline; }
+
+/* FAQ */
+.faq { margin-bottom: 30px; }
+.faq h3 { font-size: 1.2rem; color: #ff5f6d; }
 
 
 /* 5. 이메일 수집 (CTA) 섹션 */
