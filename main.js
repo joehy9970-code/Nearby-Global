@@ -403,8 +403,10 @@ function changeLang(lang) {
         if (element) {
             if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
                 element.placeholder = t[elements[id]];
-            } else {
+            } else if (['privacy-desc', 'terms-desc'].includes(id)) {
                 element.innerHTML = t[elements[id]];
+            } else {
+                element.innerText = t[elements[id]];
             }
         }
     }
