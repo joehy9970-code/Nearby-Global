@@ -86,29 +86,43 @@ const translations = {
 };
 
 function showForm() {
-    document.getElementById('cta-btn').style.display = 'none';
-    document.getElementById('email-form').style.display = 'block';
+    if(document.getElementById('cta-btn')) {
+        document.getElementById('cta-btn').style.display = 'none';
+    }
+    if(document.getElementById('email-form')) {
+        document.getElementById('email-form').style.display = 'block';
+    }
 }
 
-function changeLang(lang, event) {
+function changeLang(lang) {
     const t = translations[lang] || translations['en'];
-    document.getElementById('main-subtitle').innerText = t.subtitle;
-    document.getElementById('section-title').innerText = t.secTitle;
-    document.getElementById('section-desc').innerText = t.secDesc;
-    document.getElementById('radius-text').innerText = t.radius;
-    document.getElementById('card1-title').innerText = t.c1t;
-    document.getElementById('card1-desc').innerText = t.c1d;
-    document.getElementById('card2-title').innerText = t.c2t;
-    document.getElementById('card2-desc').innerText = t.c2d;
-    document.getElementById('cta-title').innerText = t.ctaT;
-    document.getElementById('cta-btn').innerText = t.ctaB;
-    document.getElementById('email-placeholder').placeholder = t.mailPH;
-    document.getElementById('submit-text').innerText = t.mailSub;
+    const elements = {
+        'main-subtitle': 'subtitle',
+        'section-title': 'secTitle',
+        'section-desc': 'secDesc',
+        'radius-text': 'radius',
+        'card1-title': 'c1t',
+        'card1-desc': 'c1d',
+        'card2-title': 'c2t',
+        'card2-desc': 'c2d',
+        'cta-title': 'ctaT',
+        'cta-btn': 'ctaB',
+        'email-placeholder': 'mailPH',
+        'submit-text': 'mailSub'
+    };
 
-    const buttons = document.querySelectorAll('.lang-btn');
-    buttons.forEach(btn => btn.classList.remove('active'));
-    event.currentTarget.classList.add('active');
+    for (const id in elements) {
+        const element = document.getElementById(id);
+        if (element) {
+            if (id === 'email-placeholder') {
+                element.placeholder = t[elements[id]];
+            } else {
+                element.innerText = t[elements[id]];
+            }
+        }
+    }
 }
+
 
 // Dark Mode Toggle
 const themeSwitch = document.querySelector('#checkbox');
@@ -130,4 +144,12 @@ if (currentTheme) {
         themeSwitch.checked = true;
         document.body.classList.add('dark-mode');
     }
+}
+
+// Language Selector
+const langSelector = document.getElementById('lang-selector');
+if (langSelector) {
+    langSelector.addEventListener('change', (event) => {
+        changeLang(event.target.value);
+    });
 }

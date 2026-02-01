@@ -33,14 +33,20 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Theme Switcher */
-.theme-switch-wrapper {
-    display: flex;
-    align-items: center;
+/* Top Right Controls */
+.top-right-controls {
     position: fixed;
     top: 20px;
     right: 20px;
     z-index: 1001;
+    display: flex;
+    align-items: center;
+}
+
+/* Theme Switcher */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
 }
 
 .theme-switch {
@@ -90,6 +96,19 @@ input:checked + .slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+/* Language Selector */
+.lang-select {
+    margin-left: 15px;
+}
+
+#lang-selector {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--card-border);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 

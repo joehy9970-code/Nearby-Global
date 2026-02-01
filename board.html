@@ -3,32 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nearby Global - 블로그</title>
+    <title>Nearby Global - 게시판</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="theme-switch-wrapper">
-    <label class="theme-switch" for="checkbox">
-        <input type="checkbox" id="checkbox" />
-        <div class="slider round"></div>
-  </label>
+<div class="top-right-controls">
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+      </label>
+    </div>
+    <div class="lang-select">
+        <select id="lang-selector">
+            <option value="ko">한국어</option>
+            <option value="en">English</option>
+            <option value="ru">Русский</option>
+            <option value="es">Español</option>
+            <option value="zh">中文</option>
+            <option value="ja">日本語</option>
+        </select>
+    </div>
 </div>
 
 <div class="lang-switcher">
     <a href="index.html" class="lang-btn">홈</a>
     <a href="info.html" class="lang-btn">추가 정보</a>
-    <a href="blog.html" class="lang-btn active">블로그</a>
-    <button class="lang-btn" onclick="changeLang('ko', event)">한국어</button>
-    <button class="lang-btn" onclick="changeLang('en', event)">English</button>
-    <button class="lang-btn" onclick="changeLang('ru', event)">Русский</button>
-    <button class="lang-btn" onclick="changeLang('es', event)">Español</button>
-    <button class="lang-btn" onclick="changeLang('zh', event)">中文</button>
-    <button class="lang-btn" onclick="changeLang('ja', event)">日本語</button>
+    <a href="board.html" class="lang-btn active">게시판</a>
 </div>
 
 <header>
-    <h1>블로그</h1>
+    <h1>게시판</h1>
 </header>
 
 <div class="container">
