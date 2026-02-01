@@ -169,6 +169,28 @@ h2 { font-size: 2rem; color: var(--text-color); }
 .card:hover { transform: translateY(-5px); }
 .card h3 { color: #ff5f6d; margin-top: 0; font-size: 1.4rem; }
 
+/* How it works */
+.how-it-works { margin-top: 60px; }
+.step { display: flex; align-items: center; margin-bottom: 40px; }
+.step-number { font-size: 3rem; font-weight: bold; color: #ff5f6d; margin-right: 30px; }
+.step-content h3 { font-size: 1.5rem; margin-top: 0; }
+
+/* Detailed Features */
+.detailed-features { margin-top: 60px; }
+.detailed-features ul { list-style: none; padding: 0; }
+.detailed-features li { margin-bottom: 15px; font-size: 1.1rem; }
+
+/* About Us */
+.about-us { margin-top: 60px; }
+
+/* Blog Section */
+.blog-section { margin-top: 60px; }
+.blog-post { margin-bottom: 40px; }
+.blog-post h3 { font-size: 1.5rem; }
+.blog-post a { color: #ff5f6d; text-decoration: none; }
+.blog-post a:hover { text-decoration: underline; }
+
+
 /* 5. 이메일 수집 (CTA) 섹션 */
 .cta-section { 
     text-align: center; 
