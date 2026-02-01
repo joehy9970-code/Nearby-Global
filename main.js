@@ -36,7 +36,23 @@ const translations = {
         feature3: "✔️ 아이스브레이커 질문: 어색한 첫 대화를 쉽게 시작할 수 있도록 도와드립니다.",
         feature4: "✔️ 오프라인 만남 제안: 거리가 가까운 만큼, 실제 만남으로 이어질 수 있도록 지원합니다.",
         aboutUsTitle: "우리에 대하여",
-        aboutUsDesc: "Nearby Global은 의미 있는 연결을 만드는 것을 목표로 합니다. 저희는 기술을 통해 사람들이 국경을 넘어 가까운 거리에서 새로운 인연을 만날 수 있다고 믿습니다. 저희 팀은 열정적인 개발자, 디자이너, 그리고 커뮤니티 관리자로 구성되어 있으며, 사용자들이 최고의 경험을 할 수 있도록 최선을 다하고 있습니다."
+        aboutUsDesc: "Nearby Global은 의미 있는 연결을 만드는 것을 목표로 합니다. 저희는 기술을 통해 사람들이 국경을 넘어 가까운 거리에서 새로운 인연을 만날 수 있다고 믿습니다. 저희 팀은 열정적인 개발자, 디자이너, 그리고 커뮤니티 관리자로 구성되어 있으며, 사용자들이 최고의 경험을 할 수 있도록 최선을 다하고 있습니다.",
+        infoTitle: "추가 정보",
+        faqTitle: "자주 묻는 질문 (FAQ)",
+        faq1q: "Nearby Global은 어떤 서비스인가요?",
+        faq1a: "Nearby Global은 500km 이내의 사람들과 연결해주는 국제 매칭 서비스입니다. 저희는 사용자들이 국경을 넘어 의미 있는 관계를 맺을 수 있도록 돕습니다. 저희의 목표는 단순한 온라인 상의 만남을 넘어, 실제적인 관계로 발전할 수 있는 기회를 제공하는 것입니다.",
+        faq2q: "왜 500km 인가요?",
+        faq2a: "500km는 비행기로 1시간, 기차로 한나절이면 닿을 수 있는 거리입니다. 저희는 사용자들이 '이번 주말'에 만날 수 있는 현실적인 거리의 인연을 찾을 수 있도록 돕고 싶습니다. 너무 먼 거리는 관계 유지에 어려움을 줄 수 있다는 점을 고려했습니다.",
+        faq3q: "안전한가요?",
+        faq3a: "네, 안전은 저희의 최우선 과제입니다. 저희는 모든 프로필을 검증하고, 24시간 모니터링 시스템을 통해 불건전한 사용자를 차단하고 있습니다. 또한, 사용자들 간의 메시지는 암호화되어 전송됩니다.",
+        faq4q: "비용은 얼마인가요?",
+        faq4a: "기본적인 서비스는 무료로 제공됩니다. 하지만, 더 많은 기능을 사용하고 싶으신 분들을 위해 프리미엄 플랜을 제공할 예정입니다. 프리미엄 플랜의 자세한 내용은 앱 출시 후 공개됩니다.",
+        companyTitle: "회사 소개",
+        companyDesc: "Nearby Global은 2026년에 설립된 스타트업으로, 사람들을 더 가깝게 연결하고자 하는 비전을 가지고 있습니다. 저희는 대한민국 서울에 본사를 두고 있으며, 전 세계의 사용자들이 저희 서비스를 통해 새로운 친구, 연인을 만날 수 있도록 돕고 있습니다.",
+        privacyTitle: "개인정보처리방침",
+        privacyDesc: "<strong>1. 수집하는 개인정보의 항목</strong><br>회사는 회원가입, 원활한 고객상담, 각종 서비스의 제공을 위해 아래와 같은 최소한의 개인정보를 필수항목으로 수집하고 있습니다.<br>- 필수항목 : 이름, 이메일 주소, 비밀번호, 프로필 사진, 위치 정보</p><p><strong>2. 개인정보의 수집 및 이용목적</strong><br>회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.<br>- 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금정산<br>- 회원 관리<br>- 신규 서비스 개발 및 마케팅·광고에의 활용</p><p><strong>3. 개인정보의 보유 및 이용기간</strong><br>원칙적으로, 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. 단, 관계법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 아래와 같이 관계법령에서 정한 일정한 기간 동안 회원정보를 보관합니다.",
+        termsTitle: "이용약관",
+        termsDesc: "<strong>제1조 (목적)</strong><br>이 약관은 Nearby Global이 제공하는 제반 서비스의 이용과 관련하여 회사와 회원과의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.</p><p><strong>제2조 (정의)</strong><br>이 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br>1. \"서비스\"라 함은 구현되는 단말기(PC, TV, 휴대형단말기 등의 각종 유무선 장치를 포함)와 상관없이 \"회원\"이 이용할 수 있는 Nearby Global 및 Nearby Global 관련 제반 서비스를 의미합니다.</p><p><strong>제3조 (약관의 게시와 개정)</strong><br>회사는 이 약관의 내용을 \"회원\"이 쉽게 알 수 있도록 서비스 초기 화면에 게시합니다."
     },
     en: {
         subtitle: "Cross borders, not distance.",
@@ -75,7 +91,23 @@ const translations = {
         feature3: "✔️ Icebreaker Questions: Helps you easily start awkward first conversations.",
         feature4: "✔️ Offline Meeting Suggestions: As the distance is close, we support leading to actual meetings.",
         aboutUsTitle: "About Us",
-        aboutUsDesc: "Nearby Global aims to create meaningful connections. We believe that through technology, people can meet new connections across borders and at close distances. Our team consists of passionate developers, designers, and community managers, and we do our best to ensure users have the best experience."
+        aboutUsDesc: "Nearby Global aims to create meaningful connections. We believe that through technology, people can meet new connections across borders and at close distances. Our team consists of passionate developers, designers, and community managers, and we do our best to ensure users have the best experience.",
+        infoTitle: "Additional Information",
+        faqTitle: "Frequently Asked Questions (FAQ)",
+        faq1q: "What kind of service is Nearby Global?",
+        faq1a: "Nearby Global is an international matching service that connects people within 500km. We help users form meaningful relationships across borders. Our goal is to provide opportunities for online encounters to develop into real-life relationships.",
+        faq2q: "Why 500km?",
+        faq2a: "500km is a distance that can be reached in 1 hour by plane or half a day by train. We want to help users find connections within a realistic distance that they can meet 'this weekend'. We considered that too great a distance can make it difficult to maintain relationships.",
+        faq3q: "Is it safe?",
+        faq3a: "Yes, safety is our top priority. We verify all profiles and block inappropriate users through a 24-hour monitoring system. Additionally, messages between users are sent encrypted.",
+        faq4q: "How much does it cost?",
+        faq4a: "Basic services are provided free of charge. However, we will offer a premium plan for those who want to use more features. Details of the premium plan will be announced after the app's release.",
+        companyTitle: "About Us",
+        companyDesc: "Nearby Global is a startup founded in 2026 with a vision to connect people more closely. We are headquartered in Seoul, South Korea, and help users worldwide meet new friends and partners through our service.",
+        privacyTitle: "Privacy Policy",
+        privacyDesc: "<strong>1. Items of personal information collected.</strong> The company collects the following minimum personal information as essential items for membership registration, smooth customer service, and provision of various services.<br>- Required items: Name, email address, password, profile picture, location information.</p><p><strong>2. Purpose of collection and use of personal information.</strong> The company uses the collected personal information for the following purposes:<br>- Fulfillment of contracts for service provision and settlement of fees for service provision.<br>- Member management.<br>- Development of new services and utilization for marketing and advertising.</p><p><strong>3. Retention and use period of personal information.</strong> In principle, personal information is destroyed without delay after the purpose of collection and use of personal information has been achieved. However, if it is necessary to preserve the information in accordance with relevant laws and regulations, the company stores member information for a certain period as stipulated by relevant laws and regulations, as follows.",
+        termsTitle: "Terms of Service",
+        termsDesc: "<strong>Article 1 (Purpose).</strong> These terms and conditions aim to define the rights, obligations and responsibilities between the company and members, and other necessary matters related to the use of various services provided by Nearby Global.</p><p><strong>Article 2 (Definitions).</strong> The definitions of terms used in these terms and conditions are as follows:<br>1. \"Service\" refers to Nearby Global and all related services that \"members\" can use, regardless of the device on which they are implemented (including various wired and wireless devices such as PCs, TVs, and portable devices).</p><p><strong>Article 3 (Posting and Amendment of Terms and Conditions).</strong> The company posts the contents of these terms and conditions on the initial screen of the service so that \"members\" can easily understand them."
     },
     ru: {
         subtitle: "Пересекайте границы, а не расстояния.",
@@ -114,7 +146,23 @@ const translations = {
         feature3: "✔️ Вопросы для начала разговора: Помогут легко начать неловкий первый разговор.",
         feature4: "✔️ Предложения оффлайн-встреч: Поскольку расстояние невелико, мы помогаем организовать реальные встречи.",
         aboutUsTitle: "О нас",
-        aboutUsDesc: "Nearby Global стремится создавать значимые связи. Мы верим, что с помощью технологий люди могут находить новые знакомства за пределами границ, на близком расстоянии. Наша команда состоит из увлеченных разработчиков, дизайнеров и менеджеров сообщества, которые делают все возможное, чтобы пользователи получали лучший опыт."
+        aboutUsDesc: "Nearby Global стремится создавать значимые связи. Мы верим, что с помощью технологий люди могут находить новые знакомства за пределами границ, на близком расстоянии. Наша команда состоит из увлеченных разработчиков, дизайнеров и менеджеров сообщества, которые делают все возможное, чтобы пользователи получали лучший опыт.",
+        infoTitle: "Дополнительная информация",
+        faqTitle: "Часто задаваемые вопросы (FAQ)",
+        faq1q: "Что такое Nearby Global?",
+        faq1a: "Nearby Global — это международный сервис знакомств, который соединяет людей в радиусе 500 км. Мы помогаем пользователям строить значимые отношения через границы. Наша цель — предоставить возможности для развития онлайн-знакомств в реальные отношения.",
+        faq2q: "Почему 500 км?",
+        faq2a: "500 км — это расстояние, которое можно преодолеть за 1 час на самолете или за полдня на поезде. Мы хотим помочь пользователям найти знакомства на реалистичном расстоянии, с которыми они смогут встретиться «на этих выходных». Мы учли, что слишком большое расстояние может затруднить поддержание отношений.",
+        faq3q: "Это безопасно?",
+        faq3a: "Да, безопасность — наш главный приоритет. Мы проверяем все профили и блокируем нежелательных пользователей с помощью круглосуточной системы мониторинга. Кроме того, сообщения между пользователями передаются в зашифрованном виде.",
+        faq4q: "Сколько это стоит?",
+        faq4a: "Базовые услуги предоставляются бесплатно. Однако мы предложим премиум-план для тех, кто хочет использовать больше функций. Подробности премиум-плана будут объявлены после выпуска приложения.",
+        companyTitle: "О компании",
+        companyDesc: "Nearby Global — это стартап, основанный в 2026 году с целью более тесного соединения людей. Наша штаб-квартира находится в Сеуле, Южная Корея, и мы помогаем пользователям по всему миру находить новых друзей и партнеров через наш сервис.",
+        privacyTitle: "Политика конфиденциальности",
+        privacyDesc: "<strong>1. Категории собираемых персональных данных.</strong> Компания собирает следующие минимальные персональные данные в качестве обязательных для регистрации членства, бесперебойного обслуживания клиентов и предоставления различных услуг.<br>- Обязательные поля: Имя, адрес электронной почты, пароль, фотография профиля, информация о местоположении.</p><p><strong>2. Цель сбора и использования персональных данных.</strong> Компания использует собранные персональные данные для следующих целей:<br>- Выполнение договоров на предоставление услуг и расчеты по оплате услуг.<br>- Управление членством.<br>- Разработка новых услуг и использование для маркетинга и рекламы.</p><p><strong>3. Срок хранения и использования персональных данных.</strong> В принципе, персональные данные уничтожаются без промедления после достижения цели сбора и использования персональных данных. Однако, если необходимо сохранить информацию в соответствии с положениями соответствующих законов и нормативных актов, компания хранит информацию о членах в течение определенного периода, установленного соответствующими законами и нормативными актами, как указано ниже.",
+        termsTitle: "Условия использования",
+        termsDesc: "<strong>Статья 1 (Цель).</strong> Настоящие условия и положения направлены на определение прав, обязанностей и ответственности между компанией и участниками, а также других необходимых вопросов, связанных с использованием различных услуг, предоставляемых Nearby Global.</p><p><strong>Статья 2 (Определения).</strong> Определения терминов, используемых в настоящих условиях, следующие:<br>1. \"Услуга\" означает Nearby Global и все связанные с ней услуги, которые могут использовать \"участники\", независимо от устройства, на котором они реализованы (включая различные проводные и беспроводные устройства, такие как ПК, телевизоры и портативные устройства).</p><p><strong>Статья 3 (Размещение и изменение условий).</strong> Компания размещает содержание настоящих условий на начальном экране сервиса, чтобы \"участники\" могли легко ознакомиться с ними."
     },
     es: {
         subtitle: "Cruza fronteras, no distancias.",
@@ -153,7 +201,23 @@ const translations = {
         feature3: "✔️ Preguntas para romper el hielo: Te ayudamos a iniciar conversaciones incómodas fácilmente.",
         feature4: "✔️ Sugerencias de encuentros offline: Dado que la distancia es corta, te apoyamos para que puedas tener encuentros en la vida real.",
         aboutUsTitle: "Sobre nosotros",
-        aboutUsDesc: "Nearby Global tiene como objetivo crear conexiones significativas. Creemos que a través de la tecnología, las personas pueden conocer nuevas personas más allá de las fronteras y a corta distancia. Nuestro equipo está formado por desarrolladores, diseñadores y administradores de comunidad apasionados, y nos esforzamos por garantizar que los usuarios tengan la mejor experiencia."
+        aboutUsDesc: "Nearby Global tiene como objetivo crear conexiones significativas. Creemos que a través de la tecnología, las personas pueden conocer nuevas personas más allá de las fronteras y a corta distancia. Nuestro equipo está formado por desarrolladores, diseñadores y administradores de comunidad apasionados, y nos esforzamos por garantizar que los usuarios tengan la mejor experiencia.",
+        infoTitle: "Información adicional",
+        faqTitle: "Preguntas frecuentes (FAQ)",
+        faq1q: "¿Qué tipo de servicio es Nearby Global?",
+        faq1a: "Nearby Global es un servicio de emparejamiento internacional que conecta a personas en un radio de 500 km. Ayudamos a los usuarios a establecer relaciones significativas a través de las fronteras. Nuestro objetivo es brindar oportunidades para que los encuentros en línea se conviertan en relaciones reales.",
+        faq2q: "¿Por qué 500 km?",
+        faq2a: "500 km es una distancia que se puede recorrer en 1 hora en avión o medio día en tren. Queremos ayudar a los usuarios a encontrar conexiones a una distancia realista para que puedan reunirse 'este fin de semana'. Consideramos que una distancia demasiado grande puede dificultar el mantenimiento de las relaciones.",
+        faq3q: "¿Es seguro?",
+        faq3a: "Sí, la seguridad es nuestra máxima prioridad. Verificamos todos los perfiles y bloqueamos a los usuarios inapropiados a través de un sistema de monitoreo las 24 horas. Además, los mensajes entre usuarios se envían cifrados.",
+        faq4q: "¿Cuánto cuesta?",
+        faq4a: "Los servicios básicos se proporcionan de forma gratuita. Sin embargo, ofreceremos un plan premium para aquellos que deseen utilizar más funciones. Los detalles del plan premium se anunciarán después del lanzamiento de la aplicación.",
+        companyTitle: "Sobre nosotros",
+        companyDesc: "Nearby Global es una startup fundada en 2026 con la visión de conectar a las personas más estrechamente. Tenemos nuestra sede en Seúl, Corea del Sur, y ayudamos a usuarios de todo el mundo a conocer nuevos amigos y parejas a través de nuestro servicio.",
+        privacyTitle: "Política de privacidad",
+        privacyDesc: "<strong>1. Elementos de información personal recopilada.</strong> La empresa recopila la siguiente information personal mínima como elementos esenciales para el registro de membresía, una atención al cliente fluida y la provisión de diversos servicios.<br>- Elementos obligatorios: Nombre, dirección de correo electrónico, contraseña, foto de perfil, información de ubicación.</p><p><strong>2. Propósito de la recopilación y uso de información personal.</strong> La empresa utiliza la información personal recopilada para los siguientes propósitos:<br>- Cumplimiento de contratos para la prestación de servicios y liquidación de tarifas por la prestación de servicios.<br>- Gestión de miembros.<br>- Desarrollo de nuevos servicios y utilización para marketing y publicidad.</p><p><strong>3. Período de retención y uso de la información personal.</strong> En principio, la información personal se destruye sin demora una vez que se ha logrado el propósito de la recopilación y el uso de la información personal. Sin embargo, si es necesario conservar la información de acuerdo con las leyes y regulaciones pertinentes, la empresa almacena la información del miembro durante un período determinado según lo estipulado por las leyes y regulaciones pertinentes, como se indica a continuación.",
+        termsTitle: "Términos de servicio",
+        termsDesc: "<strong>Artículo 1 (Propósito).</strong> Estos términos y condiciones tienen como objetivo definir los derechos, obligaciones y responsabilidades entre la empresa y los miembros, y otros asuntos necesarios relacionados con el uso de los diversos servicios proporcionados por Nearby Global.</p><p><strong>Artículo 2 (Definiciones).</strong> Las definiciones de los términos utilizados en estos términos y condiciones son las siguientes:<br>1. \"Servicio\" se refiere a Nearby Global y todos los servicios relacionados que los \"miembros\" pueden utilizar, independientemente del dispositivo en el que se implementen (incluidos varios dispositivos con cable e inalámbricos como PC, televisores y dispositivos portátiles).</p><p><strong>Artículo 3 (Publicación y modificación de los términos y condiciones).</strong> La empresa publica el contenido de estos términos y condiciones en la pantalla inicial del servicio para que los \"miembros\" puedan comprenderlos fácilmente."
     },
     zh: {
         subtitle: "超越国界，但不超越距离。",
@@ -192,7 +256,23 @@ const translations = {
         feature3: "✔️ 破冰问题: 帮助您轻松开启尴尬的初次对话。",
         feature4: "✔️ 线下见面建议: 距离近，更容易促成实际见面。",
         aboutUsTitle: "关于我们",
-        aboutUsDesc: "Nearby Global 旨在建立有意义的连接. 我们相信通过技术，人们可以跨越国界，在近距离内结识新朋友。我们的团队由充满热情的开发人员、设计师和社区管理员组成，致力于为用户提供最佳体验。"
+        aboutUsDesc: "Nearby Global 旨在建立有意义的连接. 我们相信通过技术，人们可以跨越国界，在近距离内结识新朋友。我们的团队由充满热情的开发人员、设计师和社区管理员组成，致力于为用户提供最佳体验。",
+        infoTitle: "附加信息",
+        faqTitle: "常见问题 (FAQ)",
+        faq1q: "Nearby Global 是什么服务？",
+        faq1a: "Nearby Global 是一个国际配对服务，连接 500 公里以内的人们。我们帮助用户跨越国界建立有意义的关系。我们的目标是提供机会，让在线相遇发展成真实的联系。",
+        faq2q: "为什么是 500 公里？",
+        faq2a: "500 公里是飞机 1 小时、火车半天即可到达的距离。我们希望帮助用户找到在“本周末”可以见面的现实距离内的缘分。我们考虑到过远的距离可能会给维持关系带来困难。",
+        faq3q: "安全吗？",
+        faq3a: "是的，安全是我们的首要任务。我们验证所有个人资料，并通过 24 小时监控系统阻止不当用户。此外，用户之间的消息是加密传输的。",
+        faq4q: "费用是多少？",
+        faq4a: "基本服务免费提供。但是，我们将为希望使用更多功能的用户提供高级计划。高级计划的详细信息将在应用程序发布后公布。",
+        companyTitle: "公司介绍",
+        companyDesc: "Nearby Global 是一家成立于 2026 年的初创公司，其愿景是更紧密地连接人们。我们的总部位于韩国首尔，旨在帮助全球用户通过我们的服务结识新朋友和伴侣。",
+        privacyTitle: "隐私政策",
+        privacyDesc: "<strong>1. 收集的个人信息项目。</strong> 公司为会员注册、顺畅的客户咨询以及提供各种服务，收集以下最基本的个人信息作为必填项。<br>- 必填项：姓名、电子邮件地址、密码、个人资料照片、位置信息。</p><p><strong>2. 个人信息的收集和使用目的。</strong> 公司将收集到的个人信息用于以下目的：<br>- 履行服务提供合同以及根据服务提供进行费用结算。<br>- 会员管理。<br>- 新服务开发以及用于营销和广告。</p><p><strong>3. 个人信息的保留和使用期限。</strong> 原则上，个人信息在收集和使用目的达成后，将立即销毁。但是，如果根据相关法律法规的规定有必要保留，公司将按照相关法律法规规定的期限保留会员信息，如下所示。",
+        termsTitle: "使用条款",
+        termsDesc: "<strong>第1条（目的）。</strong> 本条款旨在规定公司与会员之间与使用Nearby Global提供的各项服务相关的权利、义务和责任事项，以及其他必要事项。</p><p><strong>第2条（定义）。</strong> 本条款中使用的术语定义如下：<br>1. \"服务\"是指\"会员\"可以使用的Nearby Global以及与Nearby Global相关的各项服务，无论其实现终端（包括PC、电视、便携式终端等各种有线和无线设备）如何。</p><p><strong>第3条（条款的公布与修订）。</strong> 公司将本条款的内容公布在服务初始画面上，以便\"会员\"能够轻松了解。"
     },
     ja: {
         subtitle: "国境は越えても、距離は越えないで。",
@@ -231,7 +311,23 @@ const translations = {
         feature3: "✔️ アイスブレイクの質問: ぎこちない最初の会話を簡単に始めるお手伝いをします。",
         feature4: "✔️ オフラインでの出会いの提案: 距離が近い分、実際の出会いにつながるようサポートします。",
         aboutUsTitle: "私たちについて",
-        aboutUsDesc: "Nearby Globalは、意味のあるつながりを築くことを目指しています。私たちは、テクノロジーを通じて人々が国境を越え、近い距離で新たな出会いを見つけられると信じています。私たちのチームは、情熱的な開発者、デザイナー、そしてコミュニティマネージャーで構成されており、ユーザーが最高の体験をできるよう最善を尽くしています。"
+        aboutUsDesc: "Nearby Globalは、意味のあるつながりを築くことを目指しています。私たちは、テクノロジーを通じて人々が国境を越え、近い距離で新たな出会いを見つけられると信じています。私たちのチームは、情熱的な開発者、デザイナー、そしてコミュニティマネージャーで構成されており、ユーザーが最高の体験をできるよう最善を尽くしています。",
+        infoTitle: "追加情報",
+        faqTitle: "よくある質問 (FAQ)",
+        faq1q: "Nearby Globalはどのようなサービスですか？",
+        faq1a: "Nearby Globalは、500km以内の人々をつなぐ国際マッチングサービスです。私たちは、ユーザーが国境を越えて有意義な関係を築けるよう支援します。私たちの目標は、単なるオンラインでの出会いを超え、現実の関係へと発展する機会を提供することです。",
+        faq2q: "なぜ500kmなのですか？",
+        faq2a: "500kmは、飛行機で1時間、電車で半日あれば到達できる距離です。私たちは、ユーザーが「今週末」に会える現実的な距離の縁を見つけられるよう支援したいと考えています。遠すぎる距離は関係維持を困難にする可能性があることを考慮しました。",
+        faq3q: "安全ですか？",
+        faq3a: "はい、安全は私たちの最優先事項です。私たちはすべてのプロフィールを検証し、24時間監視システムを通じて不適切なユーザーをブロックしています。また、ユーザー間のメッセージは暗号化されて送信されます。",
+        faq4q: "費用はいくらですか？",
+        faq4a: "基本的なサービスは無料で提供されます。ただし、より多くの機能を利用したい方向けにプレミアムプランを提供する予定です。プレミアムプランの詳細はアプリリリース後に公開されます。",
+        companyTitle: "会社紹介",
+        companyDesc: "Nearby Globalは、人々をより密接につなぐというビジョンを持って2026年に設立されたスタートアップです。私たちは韓国ソウルに本社を置き、世界中のユーザーが私たちのサービスを通じて新しい友人や恋人に出会えるよう支援しています。",
+        privacyTitle: "個人情報保護方針",
+        privacyDesc: "<strong>1. 収集する個人情報の項目。</strong> 会社は、会員登録、円滑な顧客相談、各種サービスの提供のために、以下の最小限の個人情報を必須項目として収集しています。<br>- 必須項目：氏名、メールアドレス、パスワード、プロフィール写真、位置情報。</p><p><strong>2. 個人情報の収集および利用目的。</strong> 会社は、収集した個人情報を以下の目的のために活用します。<br>- サービス提供に関する契約履行およびサービス提供に伴う料金精算。<br>- 会員管理。<br>- 新規サービス開発およびマーケティング・広告への活用。</p><p><strong>3. 個人情報の保有および利用期間。</strong> 原則として、個人情報の収集および利用目的が達成された後には、当該情報を遅滞なく破棄します。ただし、関係法令の規定により保存する必要がある場合、会社は以下のように関係法令で定められた一定期間、会員情報を保管します。",
+        termsTitle: "利用規約",
+        termsDesc: "<strong>第1条（目的）。</strong> 本規約は、Nearby Globalが提供する諸サービスの利用に関して、会社と会員との間の権利、義務および責任事項、その他必要な事項を規定することを目的とします。</p><p><strong>第2条（定義）。</strong> 本規約で使用する用語の定義は以下のとおりです。<br>1. \"サービス\"とは、実装される端末（PC、TV、携帯端末などの各種有線・無線機器を含む）に関わらず、\"会員\"が利用できるNearby GlobalおよびNearby Global関連の諸サービスを意味します。</p><p><strong>第3条（規約の掲示と改定）。</strong> 会社は、本規約の内容を\"会員\"が容易に知ることができるよう、サービス初期画面に掲示します。"
     }
 };
 
@@ -283,7 +379,23 @@ function changeLang(lang) {
         'feature3': 'feature3',
         'feature4': 'feature4',
         'about-us-title': 'aboutUsTitle',
-        'about-us-desc': 'aboutUsDesc'
+        'about-us-desc': 'aboutUsDesc',
+        'info-title': 'infoTitle',
+        'faq-title': 'faqTitle',
+        'faq1-q': 'faq1q',
+        'faq1-a': 'faq1a',
+        'faq2-q': 'faq2q',
+        'faq2-a': 'faq2a',
+        'faq3-q': 'faq3q',
+        'faq3-a': 'faq3a',
+        'faq4-q': 'faq4q',
+        'faq4-a': 'faq4a',
+        'company-title': 'companyTitle',
+        'company-desc': 'companyDesc',
+        'privacy-title': 'privacyTitle',
+        'privacy-desc': 'privacyDesc',
+        'terms-title': 'termsTitle',
+        'terms-desc': 'termsDesc'
     };
 
     for (const id in elements) {
@@ -292,7 +404,7 @@ function changeLang(lang) {
             if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
                 element.placeholder = t[elements[id]];
             } else {
-                element.innerText = t[elements[id]];
+                element.innerHTML = t[elements[id]];
             }
         }
     }
