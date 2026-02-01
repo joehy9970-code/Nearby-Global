@@ -1,14 +1,315 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearby Global - 500km International Matching</title>
+    <style>
+        /* 1. 기본 스타일 및 레이아웃 초기화 */
+        * { box-sizing: border-box; }
+        body { font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; margin: 0; line-height: 1.6; color: #333; background-color: #fff; }
+        
+        /* 2. 상단 언어 선택 바 (버튼 크기 완벽 통일) */
+        .lang-switcher { 
+            background: #222; 
+            padding: 15px 5px; 
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .lang-btn { 
+            background: transparent; 
+            border: 1px solid rgba(255,255,255,0.5); 
+            color: white; 
+            padding: 10px 0; 
+            margin: 5px; 
+            cursor: pointer; 
+            border-radius: 6px; 
+            font-size: 0.85rem; 
+            transition: all 0.3s ease;
+            /* 핵심: 모든 언어 버튼 너비를 110px로 고정 */
+            width: 110px; 
+            text-align: center;
+        }
+
+        .lang-btn:hover, .lang-btn.active { 
+            background: #ff5f6d; 
+            border-color: #ff5f6d; 
+            font-weight: bold;
+            transform: translateY(-2px);
+        }
+
+        /* 3. 메인 히어로 섹션 */
+        header { 
+            background: linear-gradient(135deg, #ff5f6d, #ffc371); 
+            color: white; 
+            padding: 100px 20px; 
+            text-align: center; 
+        }
+        h1 { font-size: 3.5rem; margin-bottom: 10px; letter-spacing: -1px; }
+        .subtitle { font-size: 1.2rem; opacity: 0.95; font-weight: 300; }
+
+        /* 4. 콘텐츠 영역 */
+        .container { max-width: 900px; margin: 0 auto; padding: 60px 20px; }
+        
+        h2 { font-size: 2rem; color: #333; }
+        .radius-info { 
+            background: #fff3f4; 
+            border-left: 6px solid #ff5f6d; 
+            padding: 25px; 
+            margin: 30px 0; 
+            font-weight: bold; 
+            font-size: 1.1rem;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .feature-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 25px; 
+            margin-top: 50px; 
+        }
+        .card { 
+            border: 1px solid #f0f0f0; 
+            padding: 30px; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+            background: white;
+            transition: 0.3s;
+        }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { color: #ff5f6d; margin-top: 0; font-size: 1.4rem; }
+
+        /* 5. 이메일 수집 (CTA) 섹션 */
+        .cta-section { 
+            text-align: center; 
+            background: #fdfdfd; 
+            padding: 80px 20px; 
+            border-radius: 30px; 
+            margin-top: 60px;
+            border: 1px solid #eee;
+        }
+        .email-form { margin-top: 30px; display: none; animation: fadeIn 0.5s ease; } 
+        
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        .email-input { 
+            padding: 18px 25px; 
+            width: 350px; 
+            border: 2px solid #ddd; 
+            border-radius: 40px; 
+            outline: none; 
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+        .email-input:focus { border-color: #ff5f6d; box-shadow: 0 0 10px rgba(255,95,109,0.2); }
+        
+        .submit-btn { 
+            background: #ff5f6d; 
+            color: white; 
+            padding: 18px 40px; 
+            border: none; 
+            border-radius: 40px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            margin-left: 10px;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+        .submit-btn:hover { background: #e04e5a; box-shadow: 0 5px 15px rgba(224,78,90,0.3); }
+
+        .btn-main { 
+            background: #ff5f6d; 
+            color: white; 
+            padding: 20px 50px; 
+            border-radius: 40px; 
+            font-weight: bold; 
+            display: inline-block; 
+            cursor: pointer;
+            border: none;
+            font-size: 1.2rem;
+            box-shadow: 0 10px 20px rgba(255,95,109,0.2);
+            transition: 0.3s;
+        }
+        .btn-main:hover { transform: scale(1.05); background: #e04e5a; }
+
+        /* 반응형 설정 */
+        @media (max-width: 768px) { 
+            h1 { font-size: 2.5rem; }
+            .feature-grid { grid-template-columns: 1fr; } 
+            .email-input, .submit-btn { width: 100%; margin: 8px 0; }
+            .lang-btn { width: 46%; margin: 2%; } 
+        }
+    </style>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+
+<div class="lang-switcher">
+    <button class="lang-btn active" onclick="changeLang('ko', event)">한국어</button>
+    <button class="lang-btn" onclick="changeLang('en', event)">English</button>
+    <button class="lang-btn" onclick="changeLang('ru', event)">Русский</button>
+    <button class="lang-btn" onclick="changeLang('es', event)">Español</button>
+    <button class="lang-btn" onclick="changeLang('zh', event)">中文</button>
+    <button class="lang-btn" onclick="changeLang('ja', event)">日本語</button>
+</div>
+
+<header>
+    <h1 id="main-title">Nearby Global</h1>
+    <p id="main-subtitle" class="subtitle">국경은 넘어도, 거리는 넘지 마세요.</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2 id="section-title">왜 500km 인가요?</h2>
+        <p id="section-desc">비행기로 1시간, 기차로 한나절. 진심이 있다면 충분히 닿을 수 있는 거리입니다. 무의미한 장거리 연애 대신, 500km 이내의 인연을 만나보세요.</p>
+        <div class="radius-info" id="radius-text">📍 설정된 매칭 반경: 500km</div>
+    </section>
+
+    <div class="feature-grid">
+        <div class="card">
+            <h3 id="card1-title">🌍 스마트한 국제 매칭</h3>
+            <p id="card1-desc">언어와 문화가 달라도 거리만큼은 가깝게. 당신의 라이프스타일에 맞는 글로벌 인연을 찾아드립니다.</p>
+        </div>
+        <div class="card">
+            <h3 id="card2-title">📏 정확한 거리 제한</h3>
+            <p id="card2-desc">GPS 기반으로 500km 이내의 사용자만 보여줍니다. '이번 주말'에 만날 수 있는 인연을 강조합니다.</p>
+        </div>
+    </div>
+
+    <section class="cta-section">
+        <h2 id="cta-title">새로운 세계가 당신을 기다립니다</h2>
+        
+        <button class="btn-main" id="cta-btn" onclick="showForm()">앱 출시 알림 받기</button>
+
+        <form id="email-form" class="email-form" action="https://formspree.io/f/mbdkrryr" method="POST">
+            <input type="email" name="email" class="email-input" id="email-placeholder" placeholder="이메일 주소를 입력하세요" required>
+            <button type="submit" class="submit-btn" id="submit-text">신청하기</button>
+        </form>
+    </section>
+</div>
+
+<footer style="text-align: center; padding: 50px; color: #bbb; font-size: 0.9rem; border-top: 1px solid #eee;">
+    &copy; 2026 Nearby Global. All rights reserved.
+</footer>
+
+<script>
+    const translations = {
+        ko: {
+            subtitle: "국경은 넘어도, 거리는 넘지 마세요.",
+            secTitle: "왜 500km 인가요?",
+            secDesc: "비행기로 1시간, 기차로 한나절. 진심이 있다면 충분히 닿을 수 있는 거리입니다. 무의미한 장거리 연애 대신, 500km 이내의 인연을 만나보세요.",
+            radius: "📍 설정된 매칭 반경: 500km",
+            c1t: "🌍 스마트한 국제 매칭",
+            c1d: "언어와 문화가 달라도 거리만큼은 가깝게. 당신의 라이프스타일에 맞는 글로벌 인연을 찾아드립니다.",
+            c2t: "📏 정확한 거리 제한",
+            c2d: "GPS 기반으로 500km 이내의 사용자만 보여줍니다. '이번 주말'에 만날 수 있는 인연을 강조합니다.",
+            ctaT: "새로운 세계가 당신을 기다립니다",
+            ctaB: "앱 출시 알림 받기",
+            mailPH: "이메일 주소를 입력하세요",
+            mailSub: "신청하기"
+        },
+        en: {
+            subtitle: "Cross borders, not distance.",
+            secTitle: "Why 500km?",
+            secDesc: "1 hour by plane, half a day by train. Reachable distance for sincere hearts. Meet someone within 500km.",
+            radius: "📍 Radius: 500km",
+            c1t: "🌍 Smart Matching",
+            c1d: "Close in distance even with different languages. Find global connections for your lifestyle.",
+            c2t: "📏 Distance Limit",
+            c2d: "GPS-based 500km filter. Meet someone 'this weekend'.",
+            ctaT: "A new world awaits you",
+            ctaB: "Get Notified",
+            mailPH: "Enter your email",
+            mailSub: "Submit"
+        },
+        ru: {
+            subtitle: "Пересекайте границы, а не расстояния.",
+            secTitle: "Почему 500 км?",
+            secDesc: "Час на самолете, полдня на поезде. Найдите близких людей в радиусе 500 км.",
+            radius: "📍 Радиус: 500 км",
+            c1t: "🌍 Умный матчинг",
+            c1d: "Близко, даже если языки разные. Найдите связи для вашего стиля жизни.",
+            c2t: "📏 Точный лимит",
+            c2d: "Фильтр 500 км по GPS. Встретьтесь уже в эти выходные.",
+            ctaT: "Новый мир ждет вас",
+            ctaB: "Узнать о запуске",
+            mailPH: "Введите ваш email",
+            mailSub: "Отправить"
+        },
+        es: {
+            subtitle: "Cruza fronteras, no distancias.",
+            secTitle: "¿Por qué 500 km?",
+            secDesc: "1 hora en avión, medio día en tren. Es una distancia alcanzable. Conoce personas a menos de 500 km.",
+            radius: "📍 Radio de búsqueda: 500 km",
+            c1t: "🌍 Matching Global",
+            c1d: "Cerca en distancia aunque los idiomas sean diferentes. Encuentra conexiones que se adapten a tu vida.",
+            c2t: "📏 Límite Exacto",
+            c2d: "Muestra usuarios a menos de 500 km vía GPS. Céntrate en personas que puedas ver este fin de semana.",
+            ctaT: "Un nuevo mundo te espera",
+            ctaB: "Recibir Notificación",
+            mailPH: "Tu correo electrónico",
+            mailSub: "Enviar"
+        },
+        zh: {
+            subtitle: "超越国界，但不超越距离。",
+            secTitle: "为什么是 500公里？",
+            secDesc: "飞机1小时，火车半天。只要真心，这就是能触及의距离。与其漫장의异地恋，不如遇见500公里内的缘分。",
+            radius: "📍 匹配半径：500公里",
+            c1t: "🌍 智能全球匹配",
+            c1d: "语言不同，距离相近。为您寻找适合您生活方式的全球缘分。",
+            c2t: "📏 精准距离限制",
+            c2d: "基于GPS显示500公里内的用户。强调“本周末”就能见面的缘分。",
+            ctaT: "新的世界在等待着你",
+            ctaB: "获取发布通知",
+            mailPH: "输入您的电子邮件",
+            mailSub: "提交"
+        },
+        ja: {
+            subtitle: "国境は越えても、距離は越えないで。",
+            secTitle: "왜 500km なのですか？",
+            secDesc: "飛行機で1時間、電車で半日. 本気なら届く距離です. 500km以内の出会いを探しましょう。",
+            radius: "📍 マッチング範囲：500km",
+            c1t: "🌍 スマートなマッチング",
+            c1d: "言葉は違っても距離は近く。あなたのライフスタイル에 맞는 縁を見つけます。",
+            c2t: "📏 正確한 距離制限",
+            c2d: "GPSに基づき500km以内のユーザーを表示。「今週末」会える人を大切にします。",
+            ctaT: "新しい世界があなたを待っています",
+            ctaB: "リリース通知を受け取る",
+            mailPH: "メールアドレスを入力",
+            mailSub: "送信"
+        }
+    };
+
+    function showForm() {
+        document.getElementById('cta-btn').style.display = 'none';
+        document.getElementById('email-form').style.display = 'block';
+    }
+
+    function changeLang(lang, event) {
+        const t = translations[lang] || translations['en'];
+        document.getElementById('main-subtitle').innerText = t.subtitle;
+        document.getElementById('section-title').innerText = t.secTitle;
+        document.getElementById('section-desc').innerText = t.secDesc;
+        document.getElementById('radius-text').innerText = t.radius;
+        document.getElementById('card1-title').innerText = t.c1t;
+        document.getElementById('card1-desc').innerText = t.c1d;
+        document.getElementById('card2-title').innerText = t.c2t;
+        document.getElementById('card2-desc').innerText = t.c2d;
+        document.getElementById('cta-title').innerText = t.ctaT;
+        document.getElementById('cta-btn').innerText = t.ctaB;
+        document.getElementById('email-placeholder').placeholder = t.mailPH;
+        document.getElementById('submit-text').innerText = t.mailSub;
+
+        const buttons = document.querySelectorAll('.lang-btn');
+        buttons.forEach(btn => btn.classList.remove('active'));
+        event.currentTarget.classList.add('active');
+    }
+</script>
+
 </body>
 </html>
